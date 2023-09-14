@@ -78,7 +78,7 @@
             <div class="form-group">
                 <label for="password">Password</label>
                 <input class="pass" type="password" id="password" name="Password" required>
-				<a href="">forgot password ?<a/>
+				<!-- <a href="">forgot password ?<a/> -->
             </div>
            
             <button type="submit">Login</button>
@@ -86,12 +86,12 @@
 
         </form>
         <!-- Remember me Checkbox -->
-        <!-- <div >
+        <div >
             <label>
                 <input type="checkbox" id="rememberMe">
                 <span> Remember me</span>
             </label>
-         </div> -->
+         </div>
     </div>
     <script>
         document.getdtById('loginForm').addEventListener('submit', function(event) {
@@ -100,7 +100,7 @@
             var username = document.getElementById('username').value;
             var password = document.getElementById('password').value;
 			 if (username === 'abc' && password === '123') {
-        window.location.href = 'welcome.html';
+        window.location.href = 'https://www.fireflink.com/fireflink-platform';
     } 
     else if(username === 'darshan.n@fireflink.com' && password === 'Password@123'){
         window.location.href = 'https://www.fireflink.com/fireflink-platform';
