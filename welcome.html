@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url("docs/assets/WelComePage_BG.png");
+            background-size: cover; /* This ensures the background image covers the entire page */
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 1); /* Added a semi-transparent white background for better readability */
+            padding: 60px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            text-align: center;
+        }
+
+        .logo img {
+            width: 250px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+		h1{    
+			font-size: 25px;
+			font-family: Arial,Bold;
+		font-weight: 900;
+		letter-spacing: 0;
+		text-transform: uppercase;
+		opacity: 1;
+		color: #4347ad;
+		text-align: center;
+		}
+		h2{
+		font-size: 35px;
+			font-family: Arial,Bold;
+		font-weight: 900;
+		letter-spacing: 0;
+		text-transform: uppercase;
+		opacity: 1;
+		color: #db7221;
+		text-align: center;
+			
+		}
+		span{
+		color: #db7221;
+		}
+		p{
+    text-align: center;
+    font-size: 18px;
+    font-family: Arial,Bold;
+    letter-spacing: 0;
+    font-weight: 400;
+    color: #4347ad;
+    opacity: 1;
+		}
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        input {
+            width: calc(100% - 16px);
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">	
+            <img src="docs/assets/FireFlink.png" alt="FireFlink Logo">
+        </div>
+        <form id="loginForm">
+            <div class="form-group">
+				<h1>EXTREME   <span> TEST AUTOMATION<span/><h1/>
+            </div>
+            <div class="form-group">
+                <p>FireFlink Platform, a high-speed test automation platform, is the future of agile software testing.
+It is a revolutionary advancement in the testing industry because it is a scriptless, end-to-end
+test automation platform for Web, Android, iOS, and API tests.<p/>
+            </div>
+        </form>
+    </div>
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+			 if (username === 'abc' && password === '123') {
+        window.location.href = '';
+    } else {
+        alert('Invalid username or password. Please try again.');
+    }
+
+            // Add your authentication logic here
+        });
+    </script>
+</body>
+</html>
